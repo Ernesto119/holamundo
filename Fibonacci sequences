@@ -1,0 +1,14 @@
+def fibociano(n):
+    a = 0
+    b = 1
+    for i in range(n):
+        c = a+b
+        a = b
+        b = c
+
+    return b
+
+n = int(input("Ingrese un numero: "))
+
+for i in range(n):
+    print(fibociano(i))
